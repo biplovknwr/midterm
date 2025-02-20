@@ -1,0 +1,29 @@
+﻿@model _200604735.Models.Student
+
+<h2>Edit Student</h2>
+
+<form method="post">
+    <div>
+        <label asp-for="FirstName">First Name</label>
+        <input type="text" asp-for="FirstName" />
+        <span asp-validation-for="FirstName"></span>
+    </div>
+
+    <div>
+        <label asp-for="LastName">Last Name</label>
+        <input type="text" asp-for="LastName" />
+        <span asp-validation-for="LastName"></span>
+    </div>
+
+    <div>
+        <label asp-for="Email">Email Address</label> <!-- Updated to "Email" -->
+        <input type="email" asp-for="Email" /> <!-- Updated to "Email" -->
+        <span asp-validation-for="Email"></span> <!-- Updated to "Email" -->
+    </div>
+
+    
+
+    <button type="submit">Save</button>
+</form>
+
+<a href="/Student">Back to List</a>
