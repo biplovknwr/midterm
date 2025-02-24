@@ -1,18 +1,17 @@
-﻿@model List<_200604735.Models.Student>
+@model List<_200604735.Models.Student>
 
 <h1>ASP.NET</h1>
 <h2>Student List</h2>
 <a href="/Student/Create">Create New Student</a>
 <table border="1">
-    <tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Email</th><th>Age</th><th>Actions</th></tr>
+    <tr><th>ID</th><th>First Name</th><th>Last Name</th><th>Email</th><th>Actions</th></tr>
     @foreach (var student in Model)
     {
         <tr>
             <td>@student.StudentId</td>
             <td>@student.FirstName</td>
             <td>@student.LastName</td>
-            <td>@student.Email</td>
-            <td>@student.Age</td>
+            <td>@student.EmailAddress</td>
             <td>
                 <a href="/Student/Details/@student.StudentId">Details</a> |
                 <a href="/Student/Edit/@student.StudentId">Edit</a> |
