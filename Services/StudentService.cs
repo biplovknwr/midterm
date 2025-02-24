@@ -24,7 +24,7 @@ namespace _200604735.Services
 
             existingStudent.FirstName = updatedStudent.FirstName;
             existingStudent.LastName = updatedStudent.LastName;
-            existingStudent.Email = updatedStudent.Email; 
+            existingStudent.EmailAddress = updatedStudent.EmailAddress; 
             return true;
         }
 
