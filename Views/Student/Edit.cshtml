@@ -1,29 +1,27 @@
-﻿@model _200604735.Models.Student
+@model _200604735.Models.Student
 
 <h2>Edit Student</h2>
 
 <form method="post">
-    <div>
-        <label asp-for="FirstName">First Name</label>
-        <input type="text" asp-for="FirstName" />
-        <span asp-validation-for="FirstName"></span>
+    <div class="form-group">
+        <label asp-for="FirstName"></label>
+        <input type="text" asp-for="FirstName" class="form-control" required />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
     </div>
 
-    <div>
-        <label asp-for="LastName">Last Name</label>
-        <input type="text" asp-for="LastName" />
-        <span asp-validation-for="LastName"></span>
+    <div class="form-group">
+        <label asp-for="LastName"></label>
+        <input type="text" asp-for="LastName" class="form-control" required />
+        <span asp-validation-for="LastName" class="text-danger"></span>
     </div>
 
-    <div>
-        <label asp-for="Email">Email Address</label> <!-- Updated to "Email" -->
-        <input type="email" asp-for="Email" /> <!-- Updated to "Email" -->
-        <span asp-validation-for="Email"></span> <!-- Updated to "Email" -->
+    <div class="form-group">
+        <label asp-for="EmailAddress"></label>
+        <input type="email" asp-for="EmailAddress" class="form-control" />
+        <span asp-validation-for="EmailAddress" class="text-danger"></span>
     </div>
 
-    
-
-    <button type="submit">Save</button>
+    <button type="submit" class="btn btn-primary">Save</button>
 </form>
 
-<a href="/Student">Back to List</a>
+<a href="/Student" class="btn btn-secondary">Back to List</a>
